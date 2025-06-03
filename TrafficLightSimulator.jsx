@@ -1,0 +1,42 @@
+import React from 'react';
+
+const TrafficLightSimulator = () => {
+  return (
+    <div style={styles.trafficLight}>
+      <div style={{ ...styles.light, ...styles.red }}></div>
+      <div style={{ ...styles.light, ...styles.yellow }}></div>
+      <div style={{ ...styles.light, ...styles.green }}></div>
+    </div>
+  );
+};
+
+const styles = {
+  trafficLight: {
+    width: '100px',
+    backgroundColor: '#333',
+    padding: '10px',
+    borderRadius: '20px',
+    margin: '100px auto',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '15px',
+  },
+  light: {
+    width: '60px',
+    height: '60px',
+    borderRadius: '50%',
+    backgroundColor: '#555',
+  },
+  red: {
+    backgroundColor: 'red',
+  },
+  yellow: {
+    backgroundColor: 'yellow',
+  },
+  green: {
+    backgroundColor: 'green',
+  },
+};
+
+export default TrafficLightSimulator;
